@@ -4,6 +4,8 @@ class Calendar
   attr_reader :date, :header
 
   def initialize(first_week_day = 'Su')
+    raise ArgumentError, 'expected one of Su, Mo, etc' unless abbr_week_days.include?(first_week_day)
+
     @date = Date.today
     @header = week_days(first_week_day)
   end
