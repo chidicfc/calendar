@@ -1,4 +1,4 @@
-# CharlieHR Ruby Test
+# Ruby Test
 Apart from dislaying the calendar for the current month and year, a command line argument
 has been added to change which day of the week is first
 
